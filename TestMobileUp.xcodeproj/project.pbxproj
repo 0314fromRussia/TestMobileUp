@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		F172D0F226CBE69400883BAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D0F126CBE69400883BAA /* AppDelegate.swift */; };
 		F172D0F426CBE69400883BAA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D0F326CBE69400883BAA /* SceneDelegate.swift */; };
-		F172D0F626CBE69400883BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D0F526CBE69400883BAA /* ViewController.swift */; };
+		F172D0F626CBE69400883BAA /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D0F526CBE69400883BAA /* StartViewController.swift */; };
 		F172D0F926CBE69400883BAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F172D0F726CBE69400883BAA /* Main.storyboard */; };
 		F172D0FB26CBE69C00883BAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F172D0FA26CBE69C00883BAA /* Assets.xcassets */; };
 		F172D0FE26CBE69C00883BAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F172D0FC26CBE69C00883BAA /* LaunchScreen.storyboard */; };
 		F172D10926CBE69C00883BAA /* TestMobileUpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D10826CBE69C00883BAA /* TestMobileUpTests.swift */; };
 		F172D11426CBE69C00883BAA /* TestMobileUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D11326CBE69C00883BAA /* TestMobileUpUITests.swift */; };
+		F172D13026CBFF7500883BAA /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D12F26CBFF7500883BAA /* Session.swift */; };
+		F172D13926CBFFCE00883BAA /* VKAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D13826CBFFCE00883BAA /* VKAPIService.swift */; };
+		F172D14F26CC10E200883BAA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172D14E26CC10E200883BAA /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		F172D0EE26CBE69400883BAA /* TestMobileUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMobileUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F172D0F126CBE69400883BAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F172D0F326CBE69400883BAA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F172D0F526CBE69400883BAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F172D0F526CBE69400883BAA /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		F172D0F826CBE69400883BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F172D0FA26CBE69C00883BAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F172D0FD26CBE69C00883BAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		F172D10F26CBE69C00883BAA /* TestMobileUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestMobileUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F172D11326CBE69C00883BAA /* TestMobileUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMobileUpUITests.swift; sourceTree = "<group>"; };
 		F172D11526CBE69C00883BAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F172D12F26CBFF7500883BAA /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F172D13826CBFFCE00883BAA /* VKAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKAPIService.swift; sourceTree = "<group>"; };
+		F172D14E26CC10E200883BAA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		F172D0F026CBE69400883BAA /* TestMobileUp */ = {
 			isa = PBXGroup;
 			children = (
+				F172D13726CBFFAD00883BAA /* Services */,
+				F172D12E26CBFF5B00883BAA /* Model */,
+				F172D12726CBF21E00883BAA /* Controller */,
 				F172D0F126CBE69400883BAA /* AppDelegate.swift */,
 				F172D0F326CBE69400883BAA /* SceneDelegate.swift */,
-				F172D0F526CBE69400883BAA /* ViewController.swift */,
 				F172D0F726CBE69400883BAA /* Main.storyboard */,
 				F172D0FA26CBE69C00883BAA /* Assets.xcassets */,
 				F172D0FC26CBE69C00883BAA /* LaunchScreen.storyboard */,
@@ -126,6 +134,31 @@
 				F172D11526CBE69C00883BAA /* Info.plist */,
 			);
 			path = TestMobileUpUITests;
+			sourceTree = "<group>";
+		};
+		F172D12726CBF21E00883BAA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F172D0F526CBE69400883BAA /* StartViewController.swift */,
+				F172D14E26CC10E200883BAA /* LoginViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F172D12E26CBFF5B00883BAA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F172D12F26CBFF7500883BAA /* Session.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F172D13726CBFFAD00883BAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F172D13826CBFFCE00883BAA /* VKAPIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F172D0F626CBE69400883BAA /* ViewController.swift in Sources */,
+				F172D14F26CC10E200883BAA /* LoginViewController.swift in Sources */,
+				F172D13026CBFF7500883BAA /* Session.swift in Sources */,
+				F172D0F626CBE69400883BAA /* StartViewController.swift in Sources */,
 				F172D0F226CBE69400883BAA /* AppDelegate.swift in Sources */,
+				F172D13926CBFFCE00883BAA /* VKAPIService.swift in Sources */,
 				F172D0F426CBE69400883BAA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
